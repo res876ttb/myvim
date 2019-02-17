@@ -13,7 +13,7 @@ if [ -d ~/.vim ]; then
 fi
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-mv .vimrc ~/
+ln -s $PWD/.vimrc ~/
 
 # install plugins
 vim +PluginInstall +qall
