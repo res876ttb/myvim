@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git clone https://github.com/res876ttb/myvim.git
-cd myvim
+git clone https://github.com/res876ttb/myvim.git $HOME/.myvim
+cd $HOME/.myvim
 
 if [ -f ~/.vimrc ]; then
   rm -rf ~/.vimrc.pre
