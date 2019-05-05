@@ -41,7 +41,7 @@ syntax enable
 set background=dark
 " color dracula
 " colorscheme solarized
-colorscheme monokai
+" colorscheme monokai
 
 " emphasize the line of the cursor
 set cursorline
@@ -76,10 +76,13 @@ set wrap
 set scrolloff=3
 
 " set powerline font for airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " show the tabbar for airline
 let g:airline#extensions#tabline#enabled = 1
+
+" set vim-airline theme
+let g:airline_theme = 'lucius'
 
 " auto indent with different file type
 filetype indent on

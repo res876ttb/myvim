@@ -8,15 +8,15 @@ if [ -f ~/.vimrc ]; then
   mv ~/.vimrc ~/.vimrc.pre
 fi
 mkdir -p ~/.vim/bundle
-mkdir -p ~/.vim/colors
+# mkdir -p ~/.vim/colors
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -s $PWD/.vimrc ~/
 
 # install colortheme
-cd ..
-git clone https://github.com/sickill/vim-monokai.git
-mv vim-monokai/colors/monokai.vim ~/.vim/colors/
-rm -rf vim-monokai
+# cd ..
+# git clone https://github.com/sickill/vim-monokai.git
+# mv vim-monokai/colors/monokai.vim ~/.vim/colors/
+# rm -rf vim-monokai
 
 # install plugins
 vim +PluginInstall +qall
