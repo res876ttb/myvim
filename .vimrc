@@ -7,8 +7,6 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -20,6 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()
 
@@ -29,8 +28,8 @@ call vundle#end()
 " set folder maker
 set foldmarker={{{,}}}
 set foldmethod=marker
-set foldlevel=0 " 預設全部關閉
-let php_folding=1 " 這個很重要
+set foldlevel=0 " fold all marker
+let php_folding=1
 set foldnestmax=3
 
 " auto indent
@@ -38,10 +37,17 @@ set ai
 
 " color
 syntax enable
-set background=dark
-" color dracula
-" colorscheme solarized
-" colorscheme monokai
+set background=light
+set t_Co=256
+let g:airline_theme='papercolor'
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default.light': {
+  \       'transparent_background': 1
+  \     }
+  \   }
+  \ }
+colorscheme PaperColor
 
 " emphasize the line of the cursor
 set cursorline
@@ -93,7 +99,7 @@ set laststatus=2
 " setting for vim tab when editing makefile
 autocmd FileType make setlocal noexpandtab
 
-" }}}
+"  }}}
 " map setting {{{
 " ==============================================
 imap <esc><BS> <C-w>
