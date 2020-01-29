@@ -18,7 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'crusoexia/vim-monokai'
 
 call vundle#end()
 
@@ -37,17 +37,10 @@ set ai
 
 " color
 syntax enable
-set background=light
+set background=dark
 set t_Co=256
-let g:airline_theme='papercolor'
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default.light': {
-  \       'transparent_background': 1
-  \     }
-  \   }
-  \ }
-colorscheme PaperColor
+let g:airline_theme='monokai'
+colorscheme monokai
 
 " emphasize the line of the cursor
 set cursorline
