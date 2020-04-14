@@ -19,6 +19,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'crusoexia/vim-monokai'
+Plugin 'ycm-core/YouCompleteMe'
 
 call vundle#end()
 
