@@ -18,7 +18,7 @@ echo -e '\n' | vim +PluginInstall +qall
 # install YouCompleteMe
 printf "Install YouCompleteMe? (y/N)"
 read x
-if [ "$x" == "y" ] || [ "$x" == "yes" ]; then
+if [[ "$x" == "y" ]] || [[ "$x" == "yes" ]]; then
   python3 ~/.vim/bundle/YouCompleteMe/install.py
 fi
 
