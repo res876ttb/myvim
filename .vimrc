@@ -42,6 +42,9 @@ set t_Co=256
 let g:airline_theme='monokai'
 colorscheme monokai
 
+" Make background transparent
+hi Normal guibg=NONE ctermbg=NONE
+
 " emphasize the line of the cursor
 set cursorline
 
