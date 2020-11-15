@@ -33,7 +33,7 @@ let php_folding=1
 set foldnestmax=3
 
 " auto indent
-set ai
+set autoindent
 
 " color
 syntax enable
@@ -167,9 +167,9 @@ imap <leader>{ {}<left>
 imap <leader>( ()<left>
 imap <leader>[ []<left>
 imap <leader>< <><left>
-imap [<cr> []<left><cr><cr><up><tab>
-imap {<cr> {}<left><cr><cr><up><tab>
-imap (<cr> ()<left><cr><cr><up><tab>
+imap [<cr> []<left><cr><cr><up><tab><tab>
+imap {<cr> {}<left><cr><cr><up><tab><tab>
+imap (<cr> ()<left><cr><cr><up><tab><tab>
 imap <leader><tab> <c-n>
 imap <leader>v <esc>v
 imap <leader>V <esc>V
@@ -179,6 +179,7 @@ imap <leader>V <esc>V
 "========================================================
 autocmd FileType python,shell setlocal commentstring=#\ %s
 autocmd FileType cpp setlocal commentstring=//\ %s
+autocmd FileType vim setlocal commentstring=\"\ %s
 
 " }}}
 
