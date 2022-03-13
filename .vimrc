@@ -19,6 +19,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'crusoexia/vim-monokai'
+Plugin 'APZelos/blamer.nvim'
 
 call vundle#end()
 
@@ -94,6 +95,9 @@ set laststatus=2
 
 " setting for vim tab when editing makefile
 autocmd FileType make setlocal noexpandtab
+
+" enable git blamer
+let g:blamer_enabled = 1
 
 "  }}}
 " map setting {{{
