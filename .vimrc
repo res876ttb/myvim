@@ -26,6 +26,9 @@ call vundle#end()
 " }}}
 " vim setting {{{
 "===================================================
+" set mouse mode on
+set mouse=a
+
 " set folder maker
 set foldmarker={{{,}}}
 set foldmethod=marker
@@ -73,7 +76,7 @@ set incsearch
 set hlsearch
 
 " auto go to next line when the line is too long
-set wrap
+set nowrap
 
 " retain 3 lines when scroll pages
 set scrolloff=3
