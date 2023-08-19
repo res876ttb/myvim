@@ -174,9 +174,9 @@ imap <leader>{ {}<left>
 imap <leader>( ()<left>
 imap <leader>[ []<left>
 imap <leader>< <><left>
-imap [<cr> []<left><cr><cr><up><tab><tab>
-imap {<cr> {}<left><cr><cr><up><tab><tab>
-imap (<cr> ()<left><cr><cr><up><tab><tab>
+imap [<cr> []<left><cr><cr><up><tab>
+imap {<cr> {}<left><cr><cr><up><tab>
+imap (<cr> ()<left><cr><cr><up><tab>
 imap <leader><tab> <c-n>
 imap <leader>v <esc>v
 imap <leader>V <esc>V
